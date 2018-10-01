@@ -19,3 +19,7 @@ He elegido este tema para el proyecto puesto que me encantan los deportes que se
 En principio este proyecto será individual, pero está bastante relacionado con el proyecto de [vaderrama](https://github.com/vaderrama/Proyecto-IV) por lo que en un futuro no muy lejano podríamos acordar fusionar los micro-servicios, obteniendo un servicio mas completo y complejo.
 
 #Fin Documentación
+
+##Datos Personales
+Álvaro Sánchez Palomino
+77145888-R
