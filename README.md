@@ -11,7 +11,7 @@ He elegido este tema para el proyecto puesto que me encantan los deportes que se
 
 ## Herramientas
 - El lenguaje de programación que se utilizará será [Python 3.6.0](https://www.python.org/). Pudiendo cambiar la versión puesto que trabajaremos en entornos virtuales con [virtualenv](https://virtualenv.pypa.io/en/stable/)
-- Como framework utilizaré [Flask](http://flask.pocoo.org/)
+- Como framework utilizaré [Flask](http://flask.pocoo.org/), un micro-framework escrito en python.
 - Como BD todavía estoy estudiando distintas posibilidades a ver cual podría encajar mejor con el resto de herramientas
 - Como editor de texto utilizaré Atom posiblemente.
 
