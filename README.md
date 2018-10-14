@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/Alvarosanpal/Proyecto_IV.svg?branch=master)](https://travis-ci.org/Alvarosanpal/Proyecto_IV)
+
 # Proyecto_IV
 Repositorio para el proyecto de la asignatura "Infraestructura Virtual 18/19"
 
@@ -13,8 +15,9 @@ He elegido este tema para el proyecto puesto que me encantan los deportes que se
 
 - El lenguaje de programación que se utilizará será [Python 3.6.0](https://www.python.org/). Pudiendo cambiar la versión puesto que trabajaremos en entornos virtuales con [virtualenv](https://virtualenv.pypa.io/en/stable/)
 - Como framework utilizaré [Flask](http://flask.pocoo.org/), un micro-framework escrito en python.
-- Como BD todavía estoy estudiando distintas posibilidades a ver cual podría encajar mejor con el resto de herramientas
+- Como BD utilizaremos [MongoBD](https://www.mongodb.com/es)
 - Como editor de texto utilizaré Atom posiblemente.
+- Para aplicar los test al proyecto y aplicar integracion continua utilizaré PyTest y [Travis](https://travis-ci.org/)
 
 ## Colaboración
 
