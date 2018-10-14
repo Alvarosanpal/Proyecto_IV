@@ -1,4 +1,4 @@
-# content of test.py
+#contenido de test.py
 def inc(x):
     return x + 1
 
