@@ -1,6 +1,5 @@
 #contenido de test.py
 import pytest
-import request
 from app.app import calcularAlturaTabla , calcularAlturaEsquis , calcularPrecio
 
 def test_alturaTabla():
