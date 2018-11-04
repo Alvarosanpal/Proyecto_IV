@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>PDI-Resultado</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{{ url_for('static', filename='estilo.css') }}" rel="stylesheet">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='iconos/realmadrid.ico') }}">
+  </head>
+  <body>
+    <div class="Ejemplo1" align="center">
+
+      <h1>Página de Resultado</h1>
+
+      <h4>Revise los datos que se muestran a continuación:</h4>
+
+      Ha seleccionado como deporte: {{deporte}} <br><br>
+      Su altura es de {{altura}} centímetros <br><br>
+      Su nivel de habilidad es: {{habilidad}} <br><br>
+      El equipo que desea es: 
+      {% if equipo == 0 %}
+        Solo Botas. <br><br>
+      {% elif equipo == 1 %}
+        Solo Tabla. <br><br>
+      {% elif equipo == 2 %}
+        Solo Chaquetón y Pantalones. <br><br>
+      {% elif equipo == 3 %}
+        Botas y Tabla. <br><br>
+      {% else %}
+        Completo (Botas, Tabla, Chaquetón y Pantalones) <br><br>
+      {% endif %}
+
+      <h4>Según las características anteriormente descritas: </h4><br>
+
+      {% if deporte == "Snow" %}
+        La altura estimada para su tabla según su altura y su peso es: {{alturaT}} <br><br>
+      {% elif deporte == "Esqui" %}
+        La altura estimada para sus esquís teniendo en cuenta su altura y su habilidad es: {{alturaE}} <br><br>
+      {% endif %}
+
+      Según el equipo que ha seleccionado calculamos que el precio aproximado es:<h4> {{precio}} € </h4>
+
+      <h4>A continuación le dejamos una serie de enlaces donde puede alquilar el equipo pertinente: </h4>
+
+      <a href="https://www.eissierranevada.com/alquiler-equipamiento-ropa-sierra-nevada/">Aquí puede alquilar su Ropa</a> <br>
+
+      <a href="https://sierranevada.es/es/invierno/reservas/alquiler-material/">Aquí puede alquilar su Equipo</a>
+
+    </div>
+  </body>
+</html>

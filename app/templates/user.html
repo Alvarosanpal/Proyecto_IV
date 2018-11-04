@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Ejercicio 2 DAI</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{{ url_for('static', filename='estilo.css') }}" rel="stylesheet">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='iconos/realmadrid.ico') }}">
+  </head>
+  <body>
+    <div class="Ejemplo1" align="center">
+
+      <h1>Página de login</h1>
+
+      {% if usuario %}
+      {% if usuario == clave %}
+      <br>
+      <br>
+      <h2>Bienvenido {{ usuario }}!</h2> 
+      <br>
+      <br>
+
+      {% else %}
+
+      <br>
+      <br>
+      <h2>La clave no coincide!</h2> 
+      <br>
+      <br>
+
+      {% endif %}
+
+      {% else %}
+
+      
+
+      <br>
+      <p>Usuario no reconocido, Inicie Sesión</p>
+      <br>
+
+      <h4>Introduzca su nombre de usuario:</h4>
+
+       <!--form id = form1 action = "" method="post">
+        <dl >       
+          <input type=text name=username> 
+          <input type=submit value=Login usuario=name>
+        </dl>
+      </form-->
+
+<form action = "" method="post">
+      <input type="text" placeholder="username" name=username>
+      <input type="password" placeholder="password" name=password>
+      <input type=submit value=Login usuario=name clave=name>
+    </form>
+      
+      {% endif %}    
+	
+
+
+    </div>
+  </body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>PDI-Búsqueda</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{{ url_for('static', filename='estilo.css') }}" rel="stylesheet">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='iconos/realmadrid.ico') }}">
+  </head>
+  <body>
+    <div class="Ejemplo1" align="center">
+
+      <h1>Página de Búsqueda</h1>
+
+      <h4>Introduzca los datos que se piden a continuación:</h4>
+
+       <!--form id = form1 action = "" method="post">
+        <dl >       
+          <input type=text name=username> 
+          <input type=submit value=Login usuario=name>
+        </dl>
+      </form-->
+
+<form action = "resultado" method="post">
+  Deporte: <input type="text" placeholder="Esquí o Snow" name=deporte><br><br>
+  Altura (cm): <input type="number" min="50" max="250" name=altura><br><br>
+  Peso (kg): <input type="number" min="20" max="120" name=peso><br><br>
+  Nivel de Habilidad: <input type="text" placeholder="principiante,medio o experto" name=habilidad><br><br>
+  Introduzca a continuación el número según el equipo que desee:<br>
+  0 = Solo Botas / 
+  1 = Solo Tabla / 
+  2 = Solo Chaquetón y Pantalones.<br>
+  3 = Botas y Tabla / 
+  4 = Todo <br><br>
+  Equipo: <input type="number" min="0" max="4" name=equipo><br><br>
+  <input type=submit value=Calcular >
+</form>
+      
+<!--form action="" method="post">
+        Username: <input type="text" name="username" > <br>
+        Password: <input type="password" name="pass" > <br><br>
+        <input type="submit" value="Log in" name = "Login" style="margin-right: 90px">
+      </form--> 
+	
+
+
+    </div>
+  </body>
+</html>
