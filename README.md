@@ -28,6 +28,6 @@ En principio este proyecto será individual, pero está bastante relacionado con
 
 Al acceder se mostrará un formulario, en el que se solicitarán distintos datos de usuario, tras introducirlos los utilizará para calcular la altura de la tabla, o de los esquis, según se haya seleccionado, después mostrará una página con los datos introducidos y a continuación mostrará las recomendaciones de altura del equipo, así como un precio estimado y algunos enlaces para proceder con su alquiler.
 
-Despliegue: https://intense-mountain-50469.herokuapp.com/portada
+Despliegue: https://intense-mountain-50469.herokuapp.com/
 
 # Fin Documentación
