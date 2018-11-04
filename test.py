@@ -1,4 +1,3 @@
-#contenido de test.py
 import pytest
 from app.app import calcularAlturaTabla , calcularAlturaEsquis , calcularPrecio
 
