@@ -18,15 +18,15 @@
       Su altura es de {{altura}} centímetros <br><br>
       Su nivel de habilidad es: {{habilidad}} <br><br>
       El equipo que desea es: 
-      {% if equipo == 0 %}
+      {% if equipo == "0" %}
         Solo Botas. <br><br>
-      {% elif equipo == 1 %}
+      {% elif equipo == "1" %}
         Solo Tabla. <br><br>
-      {% elif equipo == 2 %}
+      {% elif equipo == "2" %}
         Solo Chaquetón y Pantalones. <br><br>
-      {% elif equipo == 3 %}
+      {% elif equipo == "3" %}
         Botas y Tabla. <br><br>
-      {% else %}
+      {% elif equipo == "4" %}
         Completo (Botas, Tabla, Chaquetón y Pantalones) <br><br>
       {% endif %}
 
