@@ -2,17 +2,17 @@ from flask import Flask, render_template
 from flask import request , redirect, url_for
 
 app = Flask(__name__)
-
+'''
 from app import app
-
+'''
 @app.route('/')
 def inicio():
     return jsonify(status="Ok")
 
-@app.route('/index')                        
-def hello_world():                      
+@app.route('/portada')                        
+def portada():                      
     return render_template('bienvenido.html')
-
+'''
 @app.route('/user/', methods=['GET','POST'])
 @app.route('/user/<user>', methods=['GET','POST'])
 def user(user=None , psw=None):
@@ -21,7 +21,7 @@ def user(user=None , psw=None):
 		parametro2 = request.form['password']		
 		return redirect(url_for('user', user=parametro1 , psw=parametro2))
 	return render_template('user.html', usuario = user , clave = psw)
-
+'''
 @app.route('/busqueda' , methods=['GET'])
 def busqueda():
 	return render_template('busqueda.html')
