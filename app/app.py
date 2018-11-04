@@ -3,7 +3,13 @@ from flask import request , redirect, url_for
 
 app = Flask(__name__)
 
-@app.route('/')                        
+from app import app
+
+@app.route('/')
+def inicio():
+    return jsonify(status="Ok")
+
+@app.route('/index')                        
 def hello_world():                      
     return render_template('bienvenido.html')
 
