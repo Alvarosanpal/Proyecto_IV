@@ -2,9 +2,7 @@ from flask import Flask, render_template
 from flask import request , redirect, url_for
 
 app = Flask(__name__)
-'''
-from app import app
-'''
+
 @app.route('/')
 def inicio():
     return jsonify(status="Ok")
