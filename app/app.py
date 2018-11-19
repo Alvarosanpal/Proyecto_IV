@@ -2,6 +2,7 @@ from flask import Flask, render_template, jsonify
 from flask import request , redirect, url_for
 
 app = Flask(__name__)
+import EquipoClass
 
 @app.route('/')
 def inicio():
